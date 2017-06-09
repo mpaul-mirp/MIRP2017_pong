@@ -20,6 +20,7 @@ void drawGameScreen() {
      drawBall();
      drawPaddles();
   // Display Scores
+     displayScores();
 }
 
 void drawBall() {
@@ -46,4 +47,10 @@ void resetGame(){
 
 void displayScores() {
   // Display Left and Right player Scores
+ text("leftScore",displayWidth/2-400,40);
+ rightLose();
+ text(leftScore,displayWidth/2-400,100);
+ text("rightScore",displayWidth/2+200,40);
+ leftLose();
+ text(rightScore,displayWidth/2+200,100);
 }
